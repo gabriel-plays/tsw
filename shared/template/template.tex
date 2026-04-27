@@ -1,0 +1,188 @@
+% Pandoc LaTeX template for The Mire End Cycle
+% Produces digest-size PDFs (5.5" x 8.5") with folk-horror typography.
+%
+% Variables expected from metadata.yaml:
+%   title, subtitle, series, author, runtime, party-size, system, version
+
+\documentclass[11pt]{article}
+
+% ========== Geometry ==========
+\usepackage[
+  paperwidth=5.5in,
+  paperheight=8.5in,
+  inner=0.55in,
+  outer=0.45in,
+  top=0.65in,
+  bottom=0.7in,
+  headheight=14pt,
+  headsep=15pt,
+  footskip=30pt,
+  marginparwidth=0pt,
+  marginparsep=0pt
+]{geometry}
+
+% ========== Fonts ==========
+% Fonts are copied next to the .tex file at build time by the Makefile.
+% This bypasses fontconfig, which on some systems prefers WOFF (web fonts)
+% that xdvipdfmx cannot read.
+\usepackage{fontspec}
+
+\setmainfont{EB Garamond}[
+  Path=./,
+  Extension=.ttf,
+  UprightFont=EBGaramond12-Regular,
+  ItalicFont=EBGaramond12-Italic,
+  BoldFont=EBGaramond12-Bold,
+  Numbers=OldStyle,
+  Ligatures={TeX,Common}
+]
+
+% Display/headers: IM Fell English
+\newfontfamily\displayfont[
+  Path=./,
+  Extension=.ttf,
+  UprightFont=IMFellEnglish-Regular,
+  ItalicFont=IMFellEnglish-Italic,
+  Ligatures={TeX,Common}
+]{IM Fell English}
+
+% Small caps explicitly
+\newfontfamily\scfont[
+  Path=./,
+  Extension=.ttf,
+  UprightFont=EBGaramond12-AllSC,
+  Ligatures={TeX,Common}
+]{EB Garamond Small Caps}
+
+% ========== Color palette ==========
+\usepackage{xcolor}
+\definecolor{ink}{HTML}{1A1614}        % near-black with warmth
+\definecolor{salt}{HTML}{6B6660}        % muted grey for asides
+\definecolor{accent}{HTML}{4A2E1F}      % deep oxblood for headers
+\definecolor{rule}{HTML}{8B7E70}        % decorative rules
+
+% ========== Typography ==========
+\usepackage{setspace}
+\setstretch{1.08}
+
+% Pandoc emits \tightlist for tight lists — must be defined
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Paragraph spacing — open, not tight (this is a folk-horror zine, not a textbook)
+\setlength{\parskip}{0.45em plus 0.1em minus 0.05em}
+\setlength{\parindent}{0pt}
+
+% Hyphenation
+\hyphenpenalty=500
+\tolerance=2000
+\emergencystretch=3em
+
+% ========== Section styling ==========
+\usepackage{titlesec}
+
+\titleformat{\section}
+  {\displayfont\Large\color{accent}}
+  {}{0pt}
+  {}
+  [\vspace{-0.2em}{\color{rule}\rule{\linewidth}{0.4pt}}]
+
+\titleformat{\subsection}
+  {\displayfont\large\color{ink}}
+  {}{0pt}
+  {}
+
+\titleformat{\subsubsection}
+  {\scfont\normalsize\color{accent}}
+  {}{0pt}
+  {}
+
+\titlespacing*{\section}{0pt}{1.6em}{0.6em}
+\titlespacing*{\subsection}{0pt}{1.0em}{0.3em}
+\titlespacing*{\subsubsection}{0pt}{0.6em}{0.2em}
+
+% ========== Block quotes (in-character speech) ==========
+\usepackage{quoting}
+\quotingsetup{vskip=0.4em, leftmargin=1em, rightmargin=0.5em, font=itshape}
+\renewenvironment{quote}
+  {\begin{quoting}\color{salt}\itshape}
+  {\end{quoting}}
+
+% ========== Lists ==========
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=1.2em, itemsep=0.2em, topsep=0.2em}
+\setlist[enumerate]{leftmargin=1.5em, itemsep=0.2em, topsep=0.2em}
+
+% Tighter list bullets
+\renewcommand{\labelitemi}{\textcolor{accent}{\small•}}
+
+% ========== Drop caps ==========
+\usepackage{lettrine}
+\renewcommand{\LettrineFontHook}{\displayfont\color{accent}}
+\setlength{\DefaultNindent}{0pt}
+
+% ========== Headers and footers ==========
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\scfont\color{salt}\thepage}
+\fancyhead[C]{\scfont\footnotesize\color{salt}\MakeLowercase{$title$}}
+
+% First page (after title) — no header
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \fancyfoot[C]{\scfont\color{salt}\thepage}%
+}
+
+% ========== Decorative section divider (used by Pandoc thematic breaks) ==========
+% Pandoc renders markdown thematic breaks as \begin{center}\rule{...}\end{center}
+% by default. We override that via the pandoc-defined \pandocbounded, OR by
+% defining a thematic break command ourselves. For now, we leave the default
+% behavior intact and provide \sectiondivider as a manually-callable command.
+\usepackage{graphicx}
+\newcommand{\sectiondivider}{%
+  \begin{center}%
+    \vspace{0.5em}%
+    {\color{rule}\Large •~~•~~•}%
+    \vspace{0.5em}%
+  \end{center}%
+}
+
+% ========== Hyperlinks (no boxes) ==========
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  pdftitle={$title$},
+  pdfauthor={$author$},
+  pdfsubject={$subtitle$},
+  pdfkeywords={tabletop, RPG, OSR, adventure}
+}
+
+% ========== Title page ==========
+\newcommand{\maketitlepage}{%
+  \thispagestyle{empty}%
+  \begin{center}%
+    \vspace*{1.5in}
+    {\scfont\color{salt}\normalsize $series$\par}
+    \vspace{2em}
+    {\displayfont\color{ink}\Huge $title$\par}
+    \vspace{1.2em}
+    {\itshape\color{salt}\large $subtitle$\par}
+    \vfill
+    {\scfont\color{ink}\normalsize $author$\par}
+    \vspace{0.5em}
+    {\scfont\color{salt}\footnotesize $system$ \quad\textperiodcentered\quad $party-size$ \quad\textperiodcentered\quad $runtime$\par}
+    \vspace{0.4in}
+  \end{center}
+  \clearpage
+}
+
+% ========== Document begin ==========
+\begin{document}
+
+\maketitlepage
+
+$body$
+
+\end{document}
