@@ -6,7 +6,7 @@ If you are reading this an hour before your session, here is the whole thing.
 
 **The truth.** Fifty years ago, the cartographer Aldwyn Mere died in his tower study, mid-stroke, redrawing a map of the region. His ghost never left. Every night, he works. Every time he redraws a line, the land shifts. Rivers change course. Hillsides slump. A forest becomes a meadow. The maps he makes are always perfectly accurate — they simply describe a land that is no longer the one people remember.
 
-**The pitch to the players.** An landscape in flux. A tower where the walls are covered in maps, each one a moment in time. A ghost who cannot stop drawing. Guides who point in two different directions depending on which map you read. A place where the old world and the new world overlap, and you can see both at once.
+**The pitch to the players.** A landscape in flux. A tower where the walls are covered in maps, each one a moment in time. A ghost who cannot stop drawing. Guides who point in two different directions depending on which map you read. A place where the old world and the new world overlap, and you can see both at once.
 
 **What can the party do?** They can find the tower and confront Aldwyn — force him to stop drawing, help him finish the map he's been working toward for fifty years, or destroy his tools entirely. They can follow the shifts and use the instability to reach a place that should be unreachable. They can gather the people who remember the old map and help them hold onto a version of the land that is slipping away. They can let the redrawing continue and simply adapt.
 
@@ -36,17 +36,17 @@ The region around the tower is in a state of permanent flux. The party will noti
 - The sky seems wrong — clouds cast shadows in directions that don't match the sun. Or perhaps the sun is in two places at once.
 - Sound carries strangely. Voices from villages that are no longer where they should be. The sound of a river that the party can see but not hear, or hear but not see.
 - Animals behaving oddly — birds circling territories that have shifted, deer standing at boundaries between old-land and new-land as if uncertain which world to inhabit.
-- Time feels off. The party might travel for what feels like an hour and arrive at a destination a day's journey away, or vice versa.
+- Time feels off. A path that should take four hours according to the map takes one. A stream you wade across in minutes requires an hour on foot. The party's sense of duration becomes unreliable. (This is not dangerous; it is disorienting. A GM note: use this to make the party uncertain of how much daylight remains, or how far they've actually traveled.)
 
 The closer to the tower, the more unstable the landscape becomes. Within a mile, the party can see both versions of the land superimposed — a ghost forest behind the real one, a phantom stream running parallel to the actual water.
 
 # Keyed Locations
 
-**1 — The Tower Study.** The cartographer's obsession, made physical. Three walls are completely covered in maps — layered, annotated, some pinned over others. One wall is open to the landscape, a vast window. Aldwyn sits at an oak desk, pen in hand, working by candlelight that never dims. He is translucent, more shadow than substance. He does not acknowledge the party unless they interfere with the map. His pen never stops moving.
+**1 — The Tower Study.** The cartographer's obsession, made physical. Three walls are covered in maps — layered, annotated, some pinned over others. One wall opens entirely to the landscape. Aldwyn sits at an oak desk, pen in hand, working by candlelight that never diminishes. He is translucent, more shadow than substance. He does not acknowledge the party unless they interfere with the map. His pen never stops.
 
-The current map — the one he has been working on for fifty years — is almost complete. One major line remains undrawn: a ridge that would reshape the entire western quadrant. He is terrified to draw it. He is desperate to draw it. His hand trembles.
+The current map — fifty years of work — is almost complete. One line remains undrawn: a ridge that would reshape the entire western quadrant. His hand trembles over it. He wants to draw it. He is terrified to draw it.
 
-**2 — The Overlap.** A place where the old map and new map literally overlap. A field that is simultaneously meadow and forest. A stream that runs in two directions. A village that exists in two states — one abandoned, one bustling — occupying the same space but perceptible only by which map you follow. The party can move between them by looking at different maps, or by focusing their attention in specific ways.
+**2 — The Overlap.** A place where old map and new map literally occupy the same space. A field that is meadow in the old version and forest in the new. A stream that flows north on old maps, east on new ones. A village bustling on the new map, abandoned on the old, both visible at once if you know where to look. The party can perceive either version by focusing on the appropriate map, or by standing at the boundary and seeing both superimposed. Movement between versions is possible — step off the old road onto the new one, and the landscape shifts. The disorientation is real.
 
 **3 — The Compass Stone.** An ancient stone marker that once showed true north. Now it points in three directions at once. Each direction is correct, depending on which version of the land you're navigating. Locals use it to determine which map they're living in that day.
 
@@ -56,7 +56,7 @@ The current map — the one he has been working on for fifty years — is almost
 
 **6 — The Village of the Unmapped.** A settlement that exists in neither the old map nor the new map — it appeared in the spaces between redrawings, in the gaps Aldwyn left. The inhabitants are refugees from both old and new, people who fell through the cracks. They have built a life in the unmapped places. They fear the completion of the final map because it will erase their refuge.
 
-**7 — The Map Room's Cellar.** Beneath the tower, filled with the detritus of fifty years of failed drafts. Crumpled parchments, ink-stained rags, abandoned tools. And in the corner, a well that appears on no map. It descends into darkness. If the party descends, they find themselves in the spaces beneath the land — the *idea* of the land before it was drawn. Aldwyn's earliest sketches are here, made manifest.
+**7 — The Map Room's Cellar.** Beneath the tower, filled with fifty years of failed drafts — crumpled parchments, ink-stained rags, abandoned tools. In the corner: a well that appears on no map. It descends far. If the party descends, they enter the *spaces beneath the land* — the idea of the region before Aldwyn began drawing. They walk among his earliest sketches, made solid. The well emerges at the Western Ridge. The journey is not spatial; it is backwards through Aldwyn's intent. Time does not pass normally. Ascending the well returns them to the tower exactly where they entered, regardless of how far they descended.
 
 **8 — The Western Ridge.** The location where the final, undrawn line would fall. Currently, this is a place of maximum instability — the land is uncertain what it should be. Cliffs phase in and out of existence. Ravines open and close. It is the only place where the party might be able to directly influence what Aldwyn draws, or prevent him from drawing it.
 
@@ -66,7 +66,7 @@ The current map — the one he has been working on for fifty years — is almost
 
 **Marta.** An old woman who remembers the land before Aldwyn's death. She keeps a copy of his oldest, most accurate map. She is grieving — every day, more of her memories become wrong. The landmarks she navigated by as a child are gone. Her home, marked on the old map, no longer exists; a forest has grown where it was. She is the party's potential guide to the old world, but she is also falling apart. She may ask the party to *restore* the old map, or she may ask them to *destroy* it so she can stop grieving.
 
-**Torvin, the Map-Lost.** A young man who fell into the spaces between maps three years ago and was caught between versions. He ages in one map, de-ages in another. He exists simultaneously in two bodies, two locations. He is going mad. He knows more about the mechanics of the shifting land than anyone alive, but his knowledge is fragmentary and contradictory. He may help the party or hinder them, depending on which version of himself they're talking to.
+**Torvin, the Map-Lost.** A young man trapped between versions of the map for three years. He exists simultaneously in two locations, two bodies — one aging in the old-map world, one de-aging in the new-map world. He converges toward the same age from opposite directions and will meet himself at 35 in approximately one year. He is fragmenting. He knows more about the shifting land than anyone alive, but his knowledge is contradictory — ask him directions and both versions are correct. If the party encounters both versions of Torvin, they can triangulate his location at the Overlap. He may help or hinder depending on which version the party is speaking to.
 
 # Resolutions
 
@@ -104,11 +104,11 @@ Roll if the party asks locals about the tower or the strange maps.
 
 # A Note for the GM
 
-This adventure is about obsession and incompleteness. Aldwyn is not a villain — he is a man who wanted control and found that control is impossible. The maps he draws are beautiful and accurate. But accuracy and rightness are not the same thing. The party is not here to punish him; they are here to decide what *completion* means, and for whom.
+This adventure asks what completion means, and for whom. Aldwyn is not evil; he wanted control and found that control is impossible. The maps he draws are beautiful and accurate. But accuracy is not rightness. The party is here to decide what happens next.
 
-The most interesting resolutions are not the ones that maximize mechanical consistency (Complete the map, Destroy the maps) but the ones that honor both the obsessive logic and the human cost (Merge the maps, Offer to take the pen). If your party finds a fourth way — a resolution you did not expect — reward them. They have understood the adventure.
+The best resolutions honor both the obsessive logic and the human cost — the ones that surprise you. If the party finds a way you did not expect, reward them. They have understood the adventure.
 
-The landscape is a character. Let it be strange. Let old and new coexist. Let the party feel the disorientation of not knowing which map they're following.
+The landscape is a character. Let it be strange. Let old and new coexist. Let the party feel the disorientation of not knowing which map they are following.
 
 # Credits & License
 
